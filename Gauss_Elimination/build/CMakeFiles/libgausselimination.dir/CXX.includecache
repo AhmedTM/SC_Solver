@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/gauss_elimination.h
+vector.h
+../include/vector.h
+matrix.h
+../include/matrix.h
+
+../include/matrix.h
+iostream
+-
+vector
+-
+
+../include/vector.h
+iostream
+-
+vector
+-
+
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/gauss_eliminiation.cpp
+gauss_elimination.h
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/gauss_elimination.h
+
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/matrix.cpp
+matrix.h
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/matrix.h
+
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/vector.cpp
+vector.h
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/vector.h
+

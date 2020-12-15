@@ -1,9 +1,9 @@
 project(gausselimination)
-set(EXECUTABLE_OUTPUT_PATH ./bin)
-set(LIBRARY_OUTPUT_PATH ./lib)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 
 include_directories(./include)
 
-add_library(libgausselimination STATIC path/to/source/code/files)
-add_executable(gaussElimination path/to/source/code/files)
+add_library(libgausselimination STATIC src/gauss_eliminiation.cpp src/matrix.cpp src/vector.cpp)
+add_executable(gaussElimination src/gauss_eliminiation.cpp src/matrix.cpp src/vector.cpp src/main.cpp)

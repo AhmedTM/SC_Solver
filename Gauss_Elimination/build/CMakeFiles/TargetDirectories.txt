@@ -1,0 +1,4 @@
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles/rebuild_cache.dir
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles/edit_cache.dir
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles/gaussElimination.dir
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles/libgausselimination.dir
