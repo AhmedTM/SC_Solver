@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.o CMakeFiles/gaussElimination.dir/src/matrix.o CMakeFiles/gaussElimination.dir/src/vector.o CMakeFiles/gaussElimination.dir/src/main.o  -o ../bin/gaussElimination 
+/usr/bin/c++     CMakeFiles/gaussElimination.dir/src/main.cpp.o  -o ../bin/gaussElimination  ../lib/libvec.a 

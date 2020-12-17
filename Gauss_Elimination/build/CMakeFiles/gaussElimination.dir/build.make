@@ -57,75 +57,31 @@ include CMakeFiles/gaussElimination.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/gaussElimination.dir/flags.make
 
-CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.o: CMakeFiles/gaussElimination.dir/flags.make
-CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.o: ../src/gauss_eliminiation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.o -c /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/gauss_eliminiation.cpp
+CMakeFiles/gaussElimination.dir/src/main.cpp.o: CMakeFiles/gaussElimination.dir/flags.make
+CMakeFiles/gaussElimination.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gaussElimination.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gaussElimination.dir/src/main.cpp.o -c /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/main.cpp
 
-CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/gauss_eliminiation.cpp > CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.i
+CMakeFiles/gaussElimination.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gaussElimination.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/main.cpp > CMakeFiles/gaussElimination.dir/src/main.cpp.i
 
-CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/gauss_eliminiation.cpp -o CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.s
-
-CMakeFiles/gaussElimination.dir/src/matrix.o: CMakeFiles/gaussElimination.dir/flags.make
-CMakeFiles/gaussElimination.dir/src/matrix.o: ../src/matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gaussElimination.dir/src/matrix.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gaussElimination.dir/src/matrix.o -c /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/matrix.cpp
-
-CMakeFiles/gaussElimination.dir/src/matrix.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gaussElimination.dir/src/matrix.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/matrix.cpp > CMakeFiles/gaussElimination.dir/src/matrix.i
-
-CMakeFiles/gaussElimination.dir/src/matrix.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gaussElimination.dir/src/matrix.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/matrix.cpp -o CMakeFiles/gaussElimination.dir/src/matrix.s
-
-CMakeFiles/gaussElimination.dir/src/vector.o: CMakeFiles/gaussElimination.dir/flags.make
-CMakeFiles/gaussElimination.dir/src/vector.o: ../src/vector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gaussElimination.dir/src/vector.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gaussElimination.dir/src/vector.o -c /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/vector.cpp
-
-CMakeFiles/gaussElimination.dir/src/vector.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gaussElimination.dir/src/vector.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/vector.cpp > CMakeFiles/gaussElimination.dir/src/vector.i
-
-CMakeFiles/gaussElimination.dir/src/vector.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gaussElimination.dir/src/vector.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/vector.cpp -o CMakeFiles/gaussElimination.dir/src/vector.s
-
-CMakeFiles/gaussElimination.dir/src/main.o: CMakeFiles/gaussElimination.dir/flags.make
-CMakeFiles/gaussElimination.dir/src/main.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gaussElimination.dir/src/main.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gaussElimination.dir/src/main.o -c /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/main.cpp
-
-CMakeFiles/gaussElimination.dir/src/main.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gaussElimination.dir/src/main.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/main.cpp > CMakeFiles/gaussElimination.dir/src/main.i
-
-CMakeFiles/gaussElimination.dir/src/main.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gaussElimination.dir/src/main.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/main.cpp -o CMakeFiles/gaussElimination.dir/src/main.s
+CMakeFiles/gaussElimination.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gaussElimination.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/main.cpp -o CMakeFiles/gaussElimination.dir/src/main.cpp.s
 
 # Object files for target gaussElimination
 gaussElimination_OBJECTS = \
-"CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.o" \
-"CMakeFiles/gaussElimination.dir/src/matrix.o" \
-"CMakeFiles/gaussElimination.dir/src/vector.o" \
-"CMakeFiles/gaussElimination.dir/src/main.o"
+"CMakeFiles/gaussElimination.dir/src/main.cpp.o"
 
 # External object files for target gaussElimination
 gaussElimination_EXTERNAL_OBJECTS =
 
-../bin/gaussElimination: CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.o
-../bin/gaussElimination: CMakeFiles/gaussElimination.dir/src/matrix.o
-../bin/gaussElimination: CMakeFiles/gaussElimination.dir/src/vector.o
-../bin/gaussElimination: CMakeFiles/gaussElimination.dir/src/main.o
+../bin/gaussElimination: CMakeFiles/gaussElimination.dir/src/main.cpp.o
 ../bin/gaussElimination: CMakeFiles/gaussElimination.dir/build.make
+../bin/gaussElimination: ../lib/libvec.a
 ../bin/gaussElimination: CMakeFiles/gaussElimination.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../bin/gaussElimination"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/gaussElimination"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gaussElimination.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

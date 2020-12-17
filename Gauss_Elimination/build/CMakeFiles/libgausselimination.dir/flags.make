@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/./include 
+CXX_INCLUDES = -I/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/./include -I/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination 
 

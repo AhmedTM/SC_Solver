@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../lib/liblibgausselimination.a  CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.o CMakeFiles/libgausselimination.dir/src/matrix.o CMakeFiles/libgausselimination.dir/src/vector.o
+/usr/bin/ar qc ../lib/liblibgausselimination.a  CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.cpp.o CMakeFiles/libgausselimination.dir/src/matrix.cpp.o CMakeFiles/libgausselimination.dir/src/vector.cpp.o
 /usr/bin/ranlib ../lib/liblibgausselimination.a

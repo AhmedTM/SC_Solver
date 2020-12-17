@@ -1,4 +1,5 @@
-#pragma once
+#ifndef GAUSS_H_
+#define GAUSS_H_
 #include "vector.h"
 #include "matrix.h"
 template <typename T>
@@ -11,3 +12,4 @@ class lsSolver
     public:
 
 };
+#endif

@@ -1,6 +1,8 @@
-#pragma once
+#ifndef MATRIX_H_
+#define MATRIX_H_
 #include<iostream>
 #include<vector>
+#include"vector.h"
 template <typename T>
 class matrix
 {
@@ -19,8 +21,14 @@ class matrix
             }
         }
         matrix(const std::vector<std::vector<T>>& data) : data_(data) , rows_(data.size()) , cols_(data[0].size()) {}
-        matrix<T> add(const matrix<T> other);
-        matrix<T> operator+(const matrix<T>* other);
+        void add_column(const std::vector<T>& col);
+        void add_row(const std::vector<T>& row);
+        vector<T>& row(int rowIndex);
+        vector<T>& column(int columnIndex);
+        matrix<T> add(const matrix<T>& other);
+        matrix<T> operator+(const matrix<T>& other);
+        vector<T>& operator[](int index);
 
         
 };
+#endif

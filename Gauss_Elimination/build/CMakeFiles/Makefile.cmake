@@ -45,6 +45,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/gaussElimination.dir/DependInfo.cmake"
   "CMakeFiles/libgausselimination.dir/DependInfo.cmake"
+  "CMakeFiles/gaussElimination.dir/DependInfo.cmake"
+  "CMakeFiles/vec.dir/DependInfo.cmake"
   )

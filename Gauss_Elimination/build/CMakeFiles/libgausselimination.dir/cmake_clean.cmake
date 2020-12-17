@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "../lib/liblibgausselimination.a"
   "../lib/liblibgausselimination.pdb"
-  "CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.o"
-  "CMakeFiles/libgausselimination.dir/src/matrix.o"
-  "CMakeFiles/libgausselimination.dir/src/vector.o"
+  "CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.cpp.o"
+  "CMakeFiles/libgausselimination.dir/src/matrix.cpp.o"
+  "CMakeFiles/libgausselimination.dir/src/vector.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named libgausselimination
+
+# Build rule for target.
+libgausselimination: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libgausselimination
+.PHONY : libgausselimination
+
+# fast build rule for target.
+libgausselimination/fast:
+	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/build
+.PHONY : libgausselimination/fast
+
+#=============================================================================
 # Target rules for targets named gaussElimination
 
 # Build rule for target.
@@ -124,86 +137,128 @@ gaussElimination/fast:
 .PHONY : gaussElimination/fast
 
 #=============================================================================
-# Target rules for targets named libgausselimination
+# Target rules for targets named vec
 
 # Build rule for target.
-libgausselimination: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libgausselimination
-.PHONY : libgausselimination
+vec: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vec
+.PHONY : vec
 
 # fast build rule for target.
-libgausselimination/fast:
-	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/build
-.PHONY : libgausselimination/fast
+vec/fast:
+	$(MAKE) -f CMakeFiles/vec.dir/build.make CMakeFiles/vec.dir/build
+.PHONY : vec/fast
 
-# target to build an object file
-src/gauss_eliminiation.o:
-	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.o
-	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.o
+src/gauss_eliminiation.o: src/gauss_eliminiation.cpp.o
+
 .PHONY : src/gauss_eliminiation.o
 
-# target to preprocess a source file
-src/gauss_eliminiation.i:
-	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.i
-	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.i
+# target to build an object file
+src/gauss_eliminiation.cpp.o:
+	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.cpp.o
+.PHONY : src/gauss_eliminiation.cpp.o
+
+src/gauss_eliminiation.i: src/gauss_eliminiation.cpp.i
+
 .PHONY : src/gauss_eliminiation.i
 
-# target to generate assembly for a file
-src/gauss_eliminiation.s:
-	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/gauss_eliminiation.s
-	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.s
+# target to preprocess a source file
+src/gauss_eliminiation.cpp.i:
+	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.cpp.i
+.PHONY : src/gauss_eliminiation.cpp.i
+
+src/gauss_eliminiation.s: src/gauss_eliminiation.cpp.s
+
 .PHONY : src/gauss_eliminiation.s
 
-# target to build an object file
-src/main.o:
-	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/main.o
+# target to generate assembly for a file
+src/gauss_eliminiation.cpp.s:
+	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.cpp.s
+.PHONY : src/gauss_eliminiation.cpp.s
+
+src/main.o: src/main.cpp.o
+
 .PHONY : src/main.o
 
-# target to preprocess a source file
-src/main.i:
-	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/main.i
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
 .PHONY : src/main.i
 
-# target to generate assembly for a file
-src/main.s:
-	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/main.s
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
 .PHONY : src/main.s
 
-# target to build an object file
-src/matrix.o:
-	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/matrix.o
-	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/matrix.o
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/matrix.o: src/matrix.cpp.o
+
 .PHONY : src/matrix.o
 
-# target to preprocess a source file
-src/matrix.i:
-	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/matrix.i
-	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/matrix.i
+# target to build an object file
+src/matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/matrix.cpp.o
+.PHONY : src/matrix.cpp.o
+
+src/matrix.i: src/matrix.cpp.i
+
 .PHONY : src/matrix.i
 
-# target to generate assembly for a file
-src/matrix.s:
-	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/matrix.s
-	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/matrix.s
+# target to preprocess a source file
+src/matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/matrix.cpp.i
+.PHONY : src/matrix.cpp.i
+
+src/matrix.s: src/matrix.cpp.s
+
 .PHONY : src/matrix.s
 
-# target to build an object file
-src/vector.o:
-	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/vector.o
-	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/vector.o
+# target to generate assembly for a file
+src/matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/matrix.cpp.s
+.PHONY : src/matrix.cpp.s
+
+src/vector.o: src/vector.cpp.o
+
 .PHONY : src/vector.o
 
-# target to preprocess a source file
-src/vector.i:
-	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/vector.i
-	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/vector.i
+# target to build an object file
+src/vector.cpp.o:
+	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/vector.cpp.o
+	$(MAKE) -f CMakeFiles/vec.dir/build.make CMakeFiles/vec.dir/src/vector.cpp.o
+.PHONY : src/vector.cpp.o
+
+src/vector.i: src/vector.cpp.i
+
 .PHONY : src/vector.i
 
-# target to generate assembly for a file
-src/vector.s:
-	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/vector.s
-	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/vector.s
+# target to preprocess a source file
+src/vector.cpp.i:
+	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/vector.cpp.i
+	$(MAKE) -f CMakeFiles/vec.dir/build.make CMakeFiles/vec.dir/src/vector.cpp.i
+.PHONY : src/vector.cpp.i
+
+src/vector.s: src/vector.cpp.s
+
 .PHONY : src/vector.s
+
+# target to generate assembly for a file
+src/vector.cpp.s:
+	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/src/vector.cpp.s
+	$(MAKE) -f CMakeFiles/vec.dir/build.make CMakeFiles/vec.dir/src/vector.cpp.s
+.PHONY : src/vector.cpp.s
 
 # Help Target
 help:
@@ -213,8 +268,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... gaussElimination"
 	@echo "... libgausselimination"
+	@echo "... gaussElimination"
+	@echo "... vec"
 	@echo "... src/gauss_eliminiation.o"
 	@echo "... src/gauss_eliminiation.i"
 	@echo "... src/gauss_eliminiation.s"
