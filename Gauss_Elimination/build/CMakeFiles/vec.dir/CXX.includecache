@@ -6,13 +6,5 @@
 
 #IncludeRegexTransform: 
 
-../include/vector.h
-iostream
--
-vector
--
-
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/vector.cpp
-vector.h
-/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/vector.h
 

@@ -6,10 +6,7 @@ CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.cpp.o: ../include/matr
 CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.cpp.o: ../include/vector.h
 CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.cpp.o: ../src/gauss_eliminiation.cpp
 
-CMakeFiles/libgausselimination.dir/src/matrix.cpp.o: ../include/matrix.h
-CMakeFiles/libgausselimination.dir/src/matrix.cpp.o: ../include/vector.h
 CMakeFiles/libgausselimination.dir/src/matrix.cpp.o: ../src/matrix.cpp
 
-CMakeFiles/libgausselimination.dir/src/vector.cpp.o: ../include/vector.h
 CMakeFiles/libgausselimination.dir/src/vector.cpp.o: ../src/vector.cpp
 

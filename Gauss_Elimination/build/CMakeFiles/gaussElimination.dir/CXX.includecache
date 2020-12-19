@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+../include/gauss_elimination.h
+matrix.h
+../include/matrix.h
+vector.h
+../include/vector.h
+
+../include/matrix.h
+iostream
+-
+vector
+-
+vector.h
+../include/vector.h
+
 ../include/vector.h
 iostream
 -
@@ -13,6 +27,10 @@ vector
 -
 
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/main.cpp
+matrix.h
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/matrix.h
 vector.h
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/vector.h
+gauss_elimination.h
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/gauss_elimination.h
 

@@ -7,9 +7,6 @@ CMakeFiles/libgausselimination.dir/src/gauss_eliminiation.cpp.o
  ../include/vector.h
  /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/gauss_eliminiation.cpp
 CMakeFiles/libgausselimination.dir/src/matrix.cpp.o
- ../include/matrix.h
- ../include/vector.h
  /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/matrix.cpp
 CMakeFiles/libgausselimination.dir/src/vector.cpp.o
- ../include/vector.h
  /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/vector.cpp
