@@ -27,8 +27,8 @@ class LSSolver
             //std::cout<<"hello"<<std::endl;
             augmented = A_;
             augmented.add_column(b_.to_vector());
-            std::cout<<"Augmented matrix before"<<std::endl;
-            augmented.print();
+            //std::cout<<"Augmented matrix before"<<std::endl;
+            //augmented.print();
             switch(solver_)
             {
                 case 1:
@@ -38,29 +38,65 @@ class LSSolver
                         //std::cout<<"hello"<<std::endl;
                         rows = augmented.size().first;
                         cols = augmented.size().second;
-                        for(int i = 1; i<augmented.size().first;i++)
+                        //********************************Scaling*******************************
+                        for(int i = 0; i<augmented.size().first;i++)
                         {
-                                T coeff = augmented(i,i-1)/augmented(0,i-1);
+                            //augmented.row(i).print();
+                            augmented[i] = (augmented.row(i)/A_.row(i).max().first).to_vector();
+                            //augmented.row(i).print();
+                        }
+                        //***********************************************************************
+                        //std::cout<<"Augmented matrix after Scaling"<<std::endl;
+                        //augmented.print();
+                        for(int i = 0; i<augmented.size().first;i++)
+                        {
+                            //*********************************Pivoting*******************************
+                            int pivot_index = -1;
+                            T pivot_num = -10000;
+                            for(int k = i;k<augmented.size().first;k++)
+                            {
+                                if(augmented(i,k)>pivot_num)
+                                {
+                                    pivot_num = augmented[i][k];
+                                    pivot_index = k;
+                                }
+                            }
+                            //std::cout<<"pivot index "<<pivot_index<<std::endl;
+
+                            vector<T> pivot(augmented.row(pivot_index));
+                            augmented.swap_rows(pivot_index,i);
+                            //augmented.print();
+                            //std::cout<<"Pivot equation" <<std::endl;
+                            //pivot.print();
+                            //*************************************************************************
+                            //***************************** Forward Elimination ***********************
+                            for(int j =i+1;j<augmented.size().first;j++)
+                            {
+                                //std::cout<<"Pivot coeff = " <<pivot[i]<<std::endl;
+                                T coeff = augmented(j,i)/pivot[i];
+                                //std::cout<<"Coeff = " <<coeff<<std::endl;
                                 //std::cout<<augmented(i,i-1)<<" "<<std::endl;
                                 //std::cout<<augmented(0,i-1)<<" "<<std::endl;
-                                std::cout<<coeff<<" coeff"<<std::endl;
+                                //std::cout<<coeff<<" coeff"<<std::endl;
                                 //res.print();
-                                vector<T> res = augmented.row(0)*coeff;
+                                vector<T> res = pivot*coeff;
 
-                                res.print();
-                                res = augmented.row(i) - res;
-                                std::cout<<"after subtraction"<<std::endl;
-                                res.print();
+                                //res.print();
+                                res = augmented.row(j) - res;
+                                //std::cout<<"after subtraction"<<std::endl;
+                                //res.print();
                                 //std::cout<<augmented.size().first<<std::endl;
-                                augmented[i] = res.to_vector();
+                                augmented[j] = res.to_vector();
+                            }
                         }
-                        std::cout<<augmented.size().first<<std::endl;
-                        std::cout<<"Augmented matrix"<<std::endl;
-                        augmented.print();
-                        // backward substitution
+                        //********************************************************************************
+                        //std::cout<<augmented.size().first<<std::endl;
+                        //std::cout<<"Augmented matrix"<<std::endl;
+                        //augmented.print();
+                        //********************************* Backward Substitution ************************
                         T x_0 = augmented((rows-1),(cols-1))/augmented((rows-1),(cols-2));
                         x_[cols-2]=x_0;
-                        std::cout<<"x_0 = "<<x_0<<std::endl;
+                        //std::cout<<"x_0 = "<<x_0<<std::endl;
                         int col_change = cols - 3;
                         std::vector<T> result;
                         for(int i = rows -1;i>=0;i--)
@@ -85,7 +121,8 @@ class LSSolver
                             
                             col_change--;
                         }
-                        x_.print();
+                        //*********************************************************************************
+                        //x_.print();
                         break;
                     }
                 case 2:

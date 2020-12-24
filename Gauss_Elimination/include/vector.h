@@ -54,6 +54,22 @@ class vector
             
             return vector<T>(result);
         }
+        std::pair<T,int> max()
+        {
+            T max_num = -1000;
+            int index = -1;
+            for(int i = 0;i<data_.size();i++)
+            {
+                if(data_[i]>max_num)
+                {
+                    max_num = data_[i];
+                    index = i;
+
+                }
+            }
+            std::pair<T,int> max = {max_num,index}; 
+            return max;
+        }
         T& operator[](int index)
         {
             return data_[index];

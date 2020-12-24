@@ -8,6 +8,10 @@ int main(int argc, char *argv[])
     int size = 11;
     int rows = 11,cols = 11;
     double x = 1;
+    std::vector<std::vector<double>> A_data = {{2,1,-1},{1,4,3},{-1,2,7}};
+    std::vector<double> b_data = {0,14,30};
+    std::vector<double> a_data = {1,1,1};
+
     //std::cout<<"hello"<<std::endl;
     LSSolver<double> solver;
     //std::cout<<"hello"<<std::endl;
@@ -15,11 +19,11 @@ int main(int argc, char *argv[])
     //std::cout<<"hell"<<std::endl;
     matrix<double> mat2(rows,cols);
     //std::cout<<"hell"<<std::endl;
-    matrix<double> A(rows,cols);
+    matrix<double> A(A_data);
     //std::cout<<"hel"<<std::endl;
-    vector<double> b(size);
+    vector<double> b(b_data);
     //std::cout<<b.size()<<std::endl;
-    vector<double> a(size);
+    vector<double> a(a_data);
     for(int i =0;i<rows;i++)
     {
         //std::cout<<i<<std::endl;
@@ -30,11 +34,11 @@ int main(int argc, char *argv[])
             mat(i,j) = x;
             x++; 
         }
-        b.push_back(x);
-        a.push_back(1);
+        //b.push_back(x);
+        //a.push_back(1);
         //std::cout<<b[i]<<std::endl;
     }
-    A = mat+mat2;
+    //A = mat+mat2;
     //double y = mat2(0,0);
     //y = 5;
     //std::cout<<y<<" x test"<<std::endl;
@@ -42,8 +46,12 @@ int main(int argc, char *argv[])
     //mat.print();
     //mat2.print();
     A.print();
+    b.print();
+    a.print();
     solver.Init(A,b,a,1);
     vector<double> result = solver.Solve();
+    std::cout<<"Solution"<<std::endl;
+    result.print();
     //std::vector<double> col={1,2,3,4,5,6,7,8,9,10};
     //A.add_column(col);
     //A.print();

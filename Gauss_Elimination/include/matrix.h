@@ -63,14 +63,25 @@ class matrix
         {
             return vector<T>(data_[rowIndex]);
         }
-        std::vector<T> column(int columnIndex)
+        vector<T> column(int columnIndex)
         {
-            std::vector<T> col;
+            vector<T> col;
             for(int i =0;i<data_.size();i++)
             {
                 col.push_back(data_[i][columnIndex]);
             }
             return col;
+        }
+        void swap_rows(int row1_index,int row2_index)
+        {
+            if(row1_index>data_.size() || row2_index>data_.size())
+            {
+                throw "index out of bouds";
+            }
+            std::vector<T> temp;
+            temp = data_[row1_index];
+            data_[row1_index] = data_[row2_index];
+            data_[row2_index] = temp;
         }
         matrix<T> add(const matrix<T>& other)
         {
