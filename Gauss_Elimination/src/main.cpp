@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     std::vector<double> a_data = {1,1,1};
 
     //std::cout<<"hello"<<std::endl;
-    LSSolver<double> solver;
+    Solvers::LSSolver<double> solver;
     //std::cout<<"hello"<<std::endl;
     matrix<double> mat(rows,cols);
     //std::cout<<"hell"<<std::endl;
@@ -46,9 +46,18 @@ int main(int argc, char *argv[])
     //mat.print();
     //mat2.print();
     A.print();
-    b.print();
-    a.print();
+    //b.print();
+    //a.print();
     solver.Init(A,b,a,1);
+    bool valid_solution = solver.valid_solution;
+    if(valid_solution == true)
+    {
+        std::cout<<"The system is well conditioned"<<std::endl;
+    }
+    else
+    {
+        std::cout<<"The system is ill conditioned\n"<<std::endl;
+    }
     vector<double> result = solver.Solve();
     std::cout<<"Solution"<<std::endl;
     result.print();
