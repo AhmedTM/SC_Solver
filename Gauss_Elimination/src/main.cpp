@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
     bool valid_solution = solver.valid_solution;
     if(valid_solution == true)
     {
-        std::cout<<"The system is well conditioned"<<std::endl;
+        std::cout<<"The system is well conditioned\n"<<std::endl;
     }
     else
     {
