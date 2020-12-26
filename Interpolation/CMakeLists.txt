@@ -1,12 +1,12 @@
+cmake_minimum_required(VERSION 3.16)
 project(interpolation)
-set(EXECUTABLE_OUTPUT_PATH ./bin)
-set(LIBRARY_OUTPUT_PATH ./lib)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 
-include_directories(./include)
+include_directories(./include ${PROJECT_SOURCE_DIR})
 
-add_library(libinterpolation STATIC path/to/source/code/files)
-add_executable(interpolation path/to/source/code/files)
 
-TARGET_LINK_LIBRARIES(interpolation libgausselimination)
-TARGET_LINK_LIBRARIES(libinterpolation libgausselimination)
+file(GLOB sources ${PROJECT_SOURCE_DIR}/src/*.cpp)
+add_executable(interpolation ${sources})#src/main.cpp src/gauss_eliminiation.cpp src/matrix.cpp src/vector.cpp)
+add_library(interpolation STATIC src/matrix.cpp src/vector.cpp include/matrix.h include/vector.h)
