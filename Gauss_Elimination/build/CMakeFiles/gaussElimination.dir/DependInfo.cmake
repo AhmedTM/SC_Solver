@@ -4,7 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/gauss_elimination.cpp" "/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles/gaussElimination.dir/src/gauss_elimination.cpp.o"
   "/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/main.cpp" "/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles/gaussElimination.dir/src/main.cpp.o"
+  "/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/matrix.cpp" "/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles/gaussElimination.dir/src/matrix.cpp.o"
+  "/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/vector.cpp" "/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles/gaussElimination.dir/src/vector.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,7 +19,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles/vec.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

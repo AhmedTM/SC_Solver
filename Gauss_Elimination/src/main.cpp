@@ -10,10 +10,12 @@ int main(int argc, char *argv[])
     double x = 1;
     std::vector<std::vector<double>> A_data = {{2,1,-1},{1,4,3},{-1,2,7}};
     std::vector<double> b_data = {0,14,30};
-    std::vector<double> a_data = {1,1,1};
+    std::vector<double> a_data = {0,0,0};
+    std::vector<double> x_data = {0,0,0};
 
     //std::cout<<"hello"<<std::endl;
-    Solvers::LSSolver<double> solver;
+    Solvers::gaussSPP<double> solver;
+    Solvers::gaussSeidel<double> gssolver;
     //std::cout<<"hello"<<std::endl;
     matrix<double> mat(rows,cols);
     //std::cout<<"hell"<<std::endl;
@@ -24,6 +26,7 @@ int main(int argc, char *argv[])
     vector<double> b(b_data);
     //std::cout<<b.size()<<std::endl;
     vector<double> a(a_data);
+    vector<double> x_1(x_data);
     for(int i =0;i<rows;i++)
     {
         //std::cout<<i<<std::endl;
@@ -48,7 +51,11 @@ int main(int argc, char *argv[])
     A.print();
     //b.print();
     //a.print();
-    solver.Init(A,b,a,1);
+    solver.Init(A,b,a);
+    gssolver.Init(A,b,x_1,100,0.0000001);
+    vector<double> solution = gssolver.Solve();
+    solution.print();
+
     bool valid_solution = solver.valid_solution;
     if(valid_solution == true)
     {

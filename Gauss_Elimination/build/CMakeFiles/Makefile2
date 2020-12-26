@@ -53,9 +53,8 @@ CMAKE_BINARY_DIR = /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimina
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/libgausselimination.dir/all
+all: CMakeFiles/gausselimination.dir/all
 all: CMakeFiles/gaussElimination.dir/all
-all: CMakeFiles/vec.dir/all
 
 .PHONY : all
 
@@ -65,52 +64,51 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/libgausselimination.dir/clean
+clean: CMakeFiles/gausselimination.dir/clean
 clean: CMakeFiles/gaussElimination.dir/clean
-clean: CMakeFiles/vec.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/libgausselimination.dir
+# Target rules for target CMakeFiles/gausselimination.dir
 
 # All Build rule for target.
-CMakeFiles/libgausselimination.dir/all:
-	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/depend
-	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=3,4,5,6 "Built target libgausselimination"
-.PHONY : CMakeFiles/libgausselimination.dir/all
+CMakeFiles/gausselimination.dir/all:
+	$(MAKE) -f CMakeFiles/gausselimination.dir/build.make CMakeFiles/gausselimination.dir/depend
+	$(MAKE) -f CMakeFiles/gausselimination.dir/build.make CMakeFiles/gausselimination.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=6,7,8,9 "Built target gausselimination"
+.PHONY : CMakeFiles/gausselimination.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/libgausselimination.dir/rule: cmake_check_build_system
+CMakeFiles/gausselimination.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/libgausselimination.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gausselimination.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles 0
-.PHONY : CMakeFiles/libgausselimination.dir/rule
+.PHONY : CMakeFiles/gausselimination.dir/rule
 
 # Convenience name for target.
-libgausselimination: CMakeFiles/libgausselimination.dir/rule
+gausselimination: CMakeFiles/gausselimination.dir/rule
 
-.PHONY : libgausselimination
+.PHONY : gausselimination
 
 # clean rule for target.
-CMakeFiles/libgausselimination.dir/clean:
-	$(MAKE) -f CMakeFiles/libgausselimination.dir/build.make CMakeFiles/libgausselimination.dir/clean
-.PHONY : CMakeFiles/libgausselimination.dir/clean
+CMakeFiles/gausselimination.dir/clean:
+	$(MAKE) -f CMakeFiles/gausselimination.dir/build.make CMakeFiles/gausselimination.dir/clean
+.PHONY : CMakeFiles/gausselimination.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/gaussElimination.dir
 
 # All Build rule for target.
-CMakeFiles/gaussElimination.dir/all: CMakeFiles/vec.dir/all
+CMakeFiles/gaussElimination.dir/all:
 	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/depend
 	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=1,2 "Built target gaussElimination"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target gaussElimination"
 .PHONY : CMakeFiles/gaussElimination.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gaussElimination.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gaussElimination.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles 0
 .PHONY : CMakeFiles/gaussElimination.dir/rule
@@ -124,33 +122,6 @@ gaussElimination: CMakeFiles/gaussElimination.dir/rule
 CMakeFiles/gaussElimination.dir/clean:
 	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/clean
 .PHONY : CMakeFiles/gaussElimination.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/vec.dir
-
-# All Build rule for target.
-CMakeFiles/vec.dir/all:
-	$(MAKE) -f CMakeFiles/vec.dir/build.make CMakeFiles/vec.dir/depend
-	$(MAKE) -f CMakeFiles/vec.dir/build.make CMakeFiles/vec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=7,8 "Built target vec"
-.PHONY : CMakeFiles/vec.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/vec.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vec.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles 0
-.PHONY : CMakeFiles/vec.dir/rule
-
-# Convenience name for target.
-vec: CMakeFiles/vec.dir/rule
-
-.PHONY : vec
-
-# clean rule for target.
-CMakeFiles/vec.dir/clean:
-	$(MAKE) -f CMakeFiles/vec.dir/build.make CMakeFiles/vec.dir/clean
-.PHONY : CMakeFiles/vec.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

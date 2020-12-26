@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/gaussElimination.dir/src/main.cpp.o  -o ../bin/gaussElimination  ../lib/libvec.a 
+/usr/bin/c++     CMakeFiles/gaussElimination.dir/src/gauss_elimination.cpp.o CMakeFiles/gaussElimination.dir/src/main.cpp.o CMakeFiles/gaussElimination.dir/src/matrix.cpp.o CMakeFiles/gaussElimination.dir/src/vector.cpp.o  -o ../bin/gaussElimination 
