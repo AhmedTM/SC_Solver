@@ -223,6 +223,33 @@ src/matrix.cpp.s:
 	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/matrix.cpp.s
 .PHONY : src/matrix.cpp.s
 
+src/read_csv.o: src/read_csv.cpp.o
+
+.PHONY : src/read_csv.o
+
+# target to build an object file
+src/read_csv.cpp.o:
+	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/read_csv.cpp.o
+.PHONY : src/read_csv.cpp.o
+
+src/read_csv.i: src/read_csv.cpp.i
+
+.PHONY : src/read_csv.i
+
+# target to preprocess a source file
+src/read_csv.cpp.i:
+	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/read_csv.cpp.i
+.PHONY : src/read_csv.cpp.i
+
+src/read_csv.s: src/read_csv.cpp.s
+
+.PHONY : src/read_csv.s
+
+# target to generate assembly for a file
+src/read_csv.cpp.s:
+	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/src/read_csv.cpp.s
+.PHONY : src/read_csv.cpp.s
+
 src/vector.o: src/vector.cpp.o
 
 .PHONY : src/vector.o
@@ -272,6 +299,9 @@ help:
 	@echo "... src/matrix.o"
 	@echo "... src/matrix.i"
 	@echo "... src/matrix.s"
+	@echo "... src/read_csv.o"
+	@echo "... src/read_csv.i"
+	@echo "... src/read_csv.s"
 	@echo "... src/vector.o"
 	@echo "... src/vector.i"
 	@echo "... src/vector.s"

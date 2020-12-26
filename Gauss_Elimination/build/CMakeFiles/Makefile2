@@ -76,7 +76,7 @@ clean: CMakeFiles/gaussElimination.dir/clean
 CMakeFiles/gausselimination.dir/all:
 	$(MAKE) -f CMakeFiles/gausselimination.dir/build.make CMakeFiles/gausselimination.dir/depend
 	$(MAKE) -f CMakeFiles/gausselimination.dir/build.make CMakeFiles/gausselimination.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=6,7,8,9 "Built target gausselimination"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=7,8,9,10 "Built target gausselimination"
 .PHONY : CMakeFiles/gausselimination.dir/all
 
 # Build rule for subdir invocation for target.
@@ -103,12 +103,12 @@ CMakeFiles/gausselimination.dir/clean:
 CMakeFiles/gaussElimination.dir/all:
 	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/depend
 	$(MAKE) -f CMakeFiles/gaussElimination.dir/build.make CMakeFiles/gaussElimination.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target gaussElimination"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target gaussElimination"
 .PHONY : CMakeFiles/gaussElimination.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gaussElimination.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gaussElimination.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/build/CMakeFiles 0
 .PHONY : CMakeFiles/gaussElimination.dir/rule
