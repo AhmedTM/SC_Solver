@@ -28,7 +28,11 @@ iostream
 vector
 -
 
-/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/gauss_elimination.cpp
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/main.cpp
+matrix.h
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/matrix.h
+vector.h
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/vector.h
 gauss_elimination.h
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/gauss_elimination.h
 
