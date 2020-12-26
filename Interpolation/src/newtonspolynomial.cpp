@@ -7,5 +7,6 @@ void newtoninterpolation::Init(vector<T> x,vector<T> y)
 }
 vector<T> newtoninterpolation::Solve()
 {
+    
     return newtoninterpolation::coeff_;
 }
