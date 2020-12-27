@@ -5,5 +5,6 @@
 #include<string>
 
 std::vector<std::vector<std::string>> read_csv(std::string file_path);
+void write_csv(std::string file_path,std::vector<std::vector<double>> data);
 
 #endif

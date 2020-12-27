@@ -6,3 +6,21 @@
 
 #IncludeRegexTransform: 
 
+../include/read_csv.h
+iostream
+-
+vector
+-
+string
+-
+
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/read_csv.cpp
+read_csv.h
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/read_csv.h
+fstream
+-
+string
+-
+bits/stdc++.h
+-
+

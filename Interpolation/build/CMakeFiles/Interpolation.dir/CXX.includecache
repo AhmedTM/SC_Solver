@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/cubicspline.h
-
 ../include/matrix.h
 iostream
 -
@@ -26,23 +24,29 @@ vector.h
 matrix.h
 ../include/matrix.h
 
+../include/read_csv.h
+iostream
+-
+vector
+-
+string
+-
+
 ../include/vector.h
 iostream
 -
 vector
 -
 
-/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/cubicspline.tpp
-cubicspline.h
-/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/cubicspline.h
-
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/main.cpp
 iostream
 -
-cubicspline.tpp
-/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/cubicspline.tpp
+matrix.h
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/matrix.h
 newtonspolynomial.tpp
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/newtonspolynomial.tpp
+read_csv.h
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/read_csv.h
 
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/newtonspolynomial.tpp
 newtonspolynomial.h
