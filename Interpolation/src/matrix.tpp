@@ -1,6 +1,6 @@
-//#include "matrix.h"
+/*#include "matrix.h"
 
-/*template <typename T>
+template <typename T>
 void matrix<T>::add_column(const std::vector<T>& col)
 {
     

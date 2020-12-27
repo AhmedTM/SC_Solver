@@ -5,16 +5,20 @@
 #include"vector.h"
 #include"matrix.h"
 template <typename T>
+T f(T x1,T y1,T x2,T y2)
+{
+    return (y2-y1);
+}
+template <typename T>
 class newtoninterpolation
 {
     private:
         vector<T> x_;
-        vector<T> y_;
         vector<T> coeff_;
     public:
         newtoninterpolation();
-        void Init(vector<T> x,vector<T> y);
-        vector<T> Solve();
+        vector<T> fit(vector<T> x,vector<T> y);
+       
+        T interpolate(T x);
 };
-
 #endif

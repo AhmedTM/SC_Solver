@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libinterpolation.a  CMakeFiles/interpolation.dir/src/read_csv.cpp.o
+/usr/bin/ranlib ../lib/libinterpolation.a

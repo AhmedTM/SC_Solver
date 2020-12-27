@@ -36,11 +36,8 @@ class matrix
             {
                 throw "Column size does not match";
             }
-            //std::cout<<"hello"<<std::endl;
-            //std::cout<<data_[0].size()<<std::endl;
             for(int i =0;i<cols_;i++)
             {
-                //std::cout<<"hello"<<std::endl;
                 data_[i].push_back(col[i]);
             }
             cols_ = data_[0].size();
