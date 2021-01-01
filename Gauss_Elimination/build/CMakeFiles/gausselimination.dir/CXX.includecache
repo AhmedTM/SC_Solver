@@ -9,6 +9,8 @@
 ../include/gauss_elimination.h
 cmath
 -
+iomanip
+-
 matrix.h
 ../include/matrix.h
 vector.h

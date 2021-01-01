@@ -9,6 +9,8 @@
 ../include/gauss_elimination.h
 cmath
 -
+iomanip
+-
 matrix.h
 ../include/matrix.h
 vector.h
@@ -35,6 +37,10 @@ iostream
 -
 vector
 -
+
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/gauss_elimination.cpp
+gauss_elimination.h
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/gauss_elimination.h
 
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/main.cpp
 matrix.h

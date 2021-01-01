@@ -1,6 +1,7 @@
 #ifndef GAUSS_H_
 #define GAUSS_H_
 #include <cmath>
+#include <iomanip>
 #include"matrix.h"
 #include"vector.h"
 namespace Solvers{
@@ -265,6 +266,14 @@ namespace Solvers{
                     }
                     x_[i] = (b_[i] - sum)/A_(i,i);
                 }
+                std::cout << std::fixed;
+                std::cout << std::setprecision(4);
+                std::cout<<std::setw(9)<<"Iter"<<std::setw(10);
+                for(int i = 0;i<x_.size();i++)
+                {
+                    std::cout<<std::setw(9)<<"x"<<i<<std::setw(10);
+                }
+                std::cout<<std::endl;
                 vector<T> x_old;
                 for(int i = 1; i<iterations; i++)
                 {
@@ -275,7 +284,6 @@ namespace Solvers{
                         double sum = 0;
                         for(int k = 0; k<A_.size().second; k++)
                         {
-
                             if(j == k)
                             {
                                 continue;
@@ -293,13 +301,22 @@ namespace Solvers{
                         epsilon += x_old[j];
                     }
                     epsilon = std::abs(epsilon);
+                    std::cout<<std::setw(9)<<i<<std::setw(10);
+                    for(int k = 0;k<x_.size();k++)
+                    {
+                        std::cout<<std::setw(10)<<x_[k]<<std::setw(10);
+                    }
+                    std::cout<<std::endl;
+                    
                     if(epsilon<eps)
                     {
+                        std::cout<<std::endl;
                         std::cout<<"Converged Epsilon = "<<epsilon<<std::endl;
                         iterations = i;
                         break;
                     }
                 }
+                std::cout<<std::endl;
                 std::cout<<"iters "<<iterations<<std::endl;
                 return x_;
             }
