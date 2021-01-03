@@ -48,3 +48,13 @@ gauss_elimination.h
 read_csv.h
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/read_csv.h
 
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/read_csv.cpp
+read_csv.h
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Gauss_Elimination/src/read_csv.h
+fstream
+-
+string
+-
+bits/stdc++.h
+-
+

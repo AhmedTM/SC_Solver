@@ -76,13 +76,3 @@ read_csv.h
 newtonspolynomial.h
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/newtonspolynomial.h
 
-/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/read_csv.cpp
-read_csv.h
-/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/read_csv.h
-fstream
--
-string
--
-bits/stdc++.h
--
-

@@ -137,7 +137,11 @@ int main()
     }
     std::string double_data2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/data2_double_pointsNP.csv";
     std::string ftimes_data2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/data2_4times_pointsNP.csv";
-    std::string coeffs1_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/coefficients/3_dataset_1_newtonpolynomial_coefficients.csv";
+    std::cout<<"Data 1 newton's polynomial coefficients \n";
+    coeffs1.print();
+    std::cout<<"Data 2 newton's polynomial coefficients \n";
+    coeffs2.print();
+    /*std::string coeffs1_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/coefficients/3_dataset_1_newtonpolynomial_coefficients.csv";
     std::string coeffs2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/coefficients/3_dataset_2_newtonpolynomial_coefficients.csv";
     std::vector<std::vector<double>> coeffs_data1;
     coeffs_data1.push_back(coeffs1.to_vector());
@@ -146,7 +150,7 @@ int main()
     coeffs_data2.push_back(coeffs2.to_vector());
 
     write_csv(coeffs1_path,coeffs_data1);
-    write_csv(coeffs2_path,coeffs_data2);
+    write_csv(coeffs2_path,coeffs_data2);*/
 
 
     write_csv(double_data2_path,double_data2);
