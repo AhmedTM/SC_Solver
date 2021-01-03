@@ -37,9 +37,8 @@ std::vector<std::vector<std::string>> read_csv(std::string file_path)
         content_separated.push_back(temp);
     }
     fin.close();
-    std::cout<<content.size()<<std::endl;
-    std::cout<<content_separated.size()<<std::endl;
-    std::cout<<content_separated[0].size()<<std::endl;
-    return content_separated; 
-    
+    //std::cout<<content.size()<<std::endl;
+    //std::cout<<content_separated.size()<<std::endl;
+    //std::cout<<content_separated[0].size()<<std::endl;
+    return content_separated;
 }

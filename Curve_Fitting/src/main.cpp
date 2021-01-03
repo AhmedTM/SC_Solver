@@ -114,7 +114,7 @@ std::cout << "==============================================" << std::endl;
 
 std::cout << "Start Multivariable Regression " << std::endl;
 
-std::string filename = "/home/hesham/numerical_methods/clone/SC_Solver/datasets/Housing.csv";
+std::string filename = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Curve_Fitting/datasets/Housing.csv";
 std::vector<std::vector<std::string>> array = read_csv(filename);
 int rows_size_house = array.size();
 int cols_size_features = 4 ;
