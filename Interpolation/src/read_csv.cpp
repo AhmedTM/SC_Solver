@@ -45,11 +45,19 @@ std::vector<std::vector<std::string>> read_csv(std::string file_path)
 void write_csv(std::string file_path,std::vector<std::vector<double>> data)
 {
     std::ofstream myFile(file_path);
+     myFile << "x,y\n";
     for(int i = 0;i<data.size();i++)
     {
         for(int j = 0;j<data[0].size();j++)
         {
-            myFile << data[i][j] << ",";
+            if(j==data[0].size()-1)
+            {
+                myFile << data[i][j];    
+            }
+            else
+            {
+                myFile << data[i][j] << ",";
+            }
         }
         myFile << "\n";
     }

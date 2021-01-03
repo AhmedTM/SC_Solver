@@ -17,7 +17,7 @@ vector<T> newtoninterpolation<T>::fit(vector<T> x,vector<T> y)
             coeff_[j] = (coeff_[j]-coeff_[j-1])/(x[j]-x[j-i-1]);
         }
     }
-    coeff_.print();
+    //coeff_.print();
     return coeff_;
         
 }

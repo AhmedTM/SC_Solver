@@ -5,8 +5,8 @@
 #include "read_csv.h"
 int main()
 {
-    std::string data1_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/3_dataset_1.csv";
-    std::string data2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/3_dataset_2.csv";
+    std::string data1_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/datasets/3_dataset_1.csv";
+    std::string data2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/datasets/3_dataset_2.csv";
     //std::string output_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/output.csv";
     std::vector<std::vector<std::string>> data1_str = read_csv(data1_path);
     std::vector<std::vector<std::string>> data2_str = read_csv(data2_path);
@@ -30,7 +30,6 @@ int main()
         }
         data2.push_back(temp);
     }
-    //write_csv(output_path,data2);
     matrix<double> mat1(data1);
     matrix<double> mat2(data2);
     vector<double> x1_double;
@@ -39,6 +38,7 @@ int main()
     vector<double> x2_4times;
     vector<double> x1 = mat1.column(0);
     vector<double> x2 = mat2.column(0);
+    
     for(int i = 0;i<x1.size()-1;i++)
     {
         x1_double.push_back(x1[i]);
@@ -48,7 +48,7 @@ int main()
             x1_double.push_back(x1[x1.size()-1]);    
         }
     }
-    //x1_double.print();
+
     for(int i = 0;i<x1_double.size()-1;i++)
     {
         x1_4times.push_back(x1_double[i]);
@@ -77,12 +77,9 @@ int main()
             x2_4times.push_back(x2_double[x2_double.size()-1]);    
         }
     }
-    //mat1.print();
-    //mat2.print();
-    //std::vector<double> x_data = {-9.7979797979798,-8.58585858585859,-7.57575757575758,-7.37373737373737,-4.54545454545455,-3.93939393939394,0.505050505050505,2.32323232323232,4.74747474747475,8.78787878787879};
-    //std::vector<double> y_data = {98.1628240367145,38.5844878743563,2.83468291732757,-2.9177707077921,-41.4650638617581,-41.0421014553246,20.3303208598587,59.3541681481688,106.087803862521,127.252413946629};
-    //vector<double> x(x_data);
-    //vector<double> y(y_data);
+
+
+
     std::vector<std::vector<double>> double_data1;
     std::vector<std::vector<double>> ftimes_data1;
     newtoninterpolation<double> interpolator;
@@ -103,8 +100,8 @@ int main()
         temp.push_back(result);
         ftimes_data1.push_back(temp);
     }
-    std::string double_data1_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/data1_double_points.csv";
-    std::string ftimes_data1_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/data1_4times_points.csv";
+    std::string double_data1_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/data1_double_pointsNP.csv";
+    std::string ftimes_data1_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/data1_4times_pointsNP.csv";
     write_csv(double_data1_path,double_data1);
     write_csv(ftimes_data1_path,ftimes_data1);
 
@@ -129,8 +126,8 @@ int main()
         temp.push_back(result);
         ftimes_data2.push_back(temp);
     }
-    std::string double_data2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/data2_double_points.csv";
-    std::string ftimes_data2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/data2_4times_points.csv";
+    std::string double_data2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/data2_double_pointsNP.csv";
+    std::string ftimes_data2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/data2_4times_pointsNP.csv";
     write_csv(double_data2_path,double_data2);
     write_csv(ftimes_data2_path,ftimes_data2);
     //std::cout<<"result = "<<result<<std::endl;
