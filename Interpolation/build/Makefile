@@ -123,6 +123,33 @@ Interpolation/fast:
 	$(MAKE) -f CMakeFiles/Interpolation.dir/build.make CMakeFiles/Interpolation.dir/build
 .PHONY : Interpolation/fast
 
+src/Cubicspline_interpolation.o: src/Cubicspline_interpolation.cpp.o
+
+.PHONY : src/Cubicspline_interpolation.o
+
+# target to build an object file
+src/Cubicspline_interpolation.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpolation.dir/build.make CMakeFiles/Interpolation.dir/src/Cubicspline_interpolation.cpp.o
+.PHONY : src/Cubicspline_interpolation.cpp.o
+
+src/Cubicspline_interpolation.i: src/Cubicspline_interpolation.cpp.i
+
+.PHONY : src/Cubicspline_interpolation.i
+
+# target to preprocess a source file
+src/Cubicspline_interpolation.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpolation.dir/build.make CMakeFiles/Interpolation.dir/src/Cubicspline_interpolation.cpp.i
+.PHONY : src/Cubicspline_interpolation.cpp.i
+
+src/Cubicspline_interpolation.s: src/Cubicspline_interpolation.cpp.s
+
+.PHONY : src/Cubicspline_interpolation.s
+
+# target to generate assembly for a file
+src/Cubicspline_interpolation.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpolation.dir/build.make CMakeFiles/Interpolation.dir/src/Cubicspline_interpolation.cpp.s
+.PHONY : src/Cubicspline_interpolation.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Interpolation"
+	@echo "... src/Cubicspline_interpolation.o"
+	@echo "... src/Cubicspline_interpolation.i"
+	@echo "... src/Cubicspline_interpolation.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

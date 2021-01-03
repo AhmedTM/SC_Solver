@@ -2,7 +2,7 @@
 
 
 Cubicspline_interpolation::Cubicspline_interpolation()
-{ 
+{
 }
 
 
@@ -24,7 +24,7 @@ void Cubicspline_interpolation::fit(std::vector<double> x, std::vector<double> y
         h_[i]=x[i+1]-x[i];
     }
     //Generate Tri Matrix
-    delete S_;
+    //delete S_;
     S_ = new matrix<double>(n_-1, n_);
     gen_trimat(y, n_);
     //Gauss elimination

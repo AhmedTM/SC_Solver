@@ -6,6 +6,28 @@
 
 #IncludeRegexTransform: 
 
+../include/Cubicspline_interpolation.h
+iostream
+-
+vector
+-
+vector.h
+../include/vector.h
+matrix.h
+../include/matrix.h
+gauss_elimination.h
+../include/gauss_elimination.h
+
+../include/gauss_elimination.h
+cmath
+-
+iomanip
+-
+matrix.h
+../include/matrix.h
+vector.h
+../include/vector.h
+
 ../include/matrix.h
 iostream
 -
@@ -45,6 +67,8 @@ matrix.h
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/matrix.h
 newtonspolynomial.tpp
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/newtonspolynomial.tpp
+Cubicspline_interpolation.h
+/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/Cubicspline_interpolation.h
 read_csv.h
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/src/read_csv.h
 

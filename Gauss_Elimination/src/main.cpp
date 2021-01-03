@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
     solver.Init(A,b,a);
     gssolver.Init(A,b,x_1,100,0.0000001);
     vector<double> solution = gssolver.Solve();
+    std::cout<<"Gauss Seidel Solution"<<std::endl;
     solution.print();
 
     bool valid_solution = solver.valid_solution;
@@ -47,7 +48,7 @@ int main(int argc, char *argv[])
         std::cout<<"The system is ill conditioned\n"<<std::endl;
     }
     vector<double> result = solver.Solve();
-    std::cout<<"Solution"<<std::endl;
+    std::cout<<"Scaled Partial Pivoting Gauss Elimination Solution"<<std::endl;
     result.print();
     
 }

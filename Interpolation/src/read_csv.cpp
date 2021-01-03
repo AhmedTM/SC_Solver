@@ -1,7 +1,7 @@
 #include"read_csv.h"
 #include <fstream>
 #include <string>
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 std::vector<std::vector<std::string>> read_csv(std::string file_path)
 {
     // File pointer 
@@ -45,7 +45,7 @@ std::vector<std::vector<std::string>> read_csv(std::string file_path)
 void write_csv(std::string file_path,std::vector<std::vector<double>> data)
 {
     std::ofstream myFile(file_path);
-     myFile << "x,y\n";
+    //myFile << "x,y\n";
     for(int i = 0;i<data.size();i++)
     {
         for(int j = 0;j<data[0].size();j++)

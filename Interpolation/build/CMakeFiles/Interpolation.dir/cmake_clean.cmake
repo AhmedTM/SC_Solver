@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "../bin/Interpolation"
   "../bin/Interpolation.pdb"
+  "CMakeFiles/Interpolation.dir/src/Cubicspline_interpolation.cpp.o"
   "CMakeFiles/Interpolation.dir/src/main.cpp.o"
   "CMakeFiles/Interpolation.dir/src/read_csv.cpp.o"
 )
