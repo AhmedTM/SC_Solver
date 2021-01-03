@@ -1,12 +1,12 @@
+cmake_minimum_required(VERSION 3.16)
 project(curvefitting)
-set(EXECUTABLE_OUTPUT_PATH ./bin)
-set(LIBRARY_OUTPUT_PATH ./lib)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 
-include_directories(./include)
+include_directories(./include ${PROJECT_SOURCE_DIR})
 
-add_library(libcurvefitting STATIC path/to/source/code/files/without/main.cpp)
-add_executable(curveFitting path/to/source/code/files)
 
-TARGET_LINK_LIBRARIES(curveFitting libgausselimination)
-TARGET_LINK_LIBRARIES(libcurvefitting libgausselimination)
+file(GLOB sources ${PROJECT_SOURCE_DIR}/src/*.cpp)
+add_executable(curveFitting ${sources})#src/main.cpp src/gauss_eliminiation.cpp src/matrix.cpp src/vector.cpp)
+add_library(curvefitting STATIC ${sources})
