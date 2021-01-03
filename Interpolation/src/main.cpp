@@ -1,8 +1,9 @@
 #include<iostream>
-//#include "newtonspolynomial.h"
 #include"matrix.h"
 #include "newtonspolynomial.tpp"
+#include "Cubicspline_interpolation.h"
 #include "read_csv.h"
+
 int main()
 {
     std::string data1_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/datasets/3_dataset_1.csv";
@@ -12,8 +13,14 @@ int main()
     std::vector<std::vector<std::string>> data2_str = read_csv(data2_path);
     std::vector<std::vector<double>> data1;
     std::vector<std::vector<double>> data2;
+    std::vector<double> data1_x;
+	std::vector<double> data1_y;
+	std::vector<double> data2_x;
+	std::vector<double> data2_y;
     for(int i = 1;i<data1_str.size();i++)
     {
+        data1_x.push_back(std::stod(data1_str[i][0]));
+		data1_y.push_back(std::stod(data1_str[i][1]));
         std::vector<double> temp;
         for(int j = 0;j<2;j++)
         {
@@ -23,6 +30,8 @@ int main()
     }
     for(int i = 1;i<data2_str.size();i++)
     {
+        data2_x.push_back(std::stod(data2_str[i][0]));
+		data2_y.push_back(std::stod(data2_str[i][1]));
         std::vector<double> temp;
         for(int j = 0;j<2;j++)
         {
@@ -130,6 +139,60 @@ int main()
     std::string ftimes_data2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/data2_4times_pointsNP.csv";
     write_csv(double_data2_path,double_data2);
     write_csv(ftimes_data2_path,ftimes_data2);
-    //std::cout<<"result = "<<result<<std::endl;
+    
+    /************************************************************************************************************/
+    /**************************************CUBIC SPLINE INTERPOLATION***************************************************/
+    /************************************************************************************************************/
+	Cubicspline_interpolation interpolator;
+	interpolator.fit(data1_x, data1_y);
+	double_data1.clear();
+	ftimes_data1.clear();
+
+	for (int i = 0; i<x1_double.size(); i++)
+	{
+		std::vector<double> temp;
+		temp.push_back(x1_double[i]);
+		double result = interpolator.interpolate(x1_double[i]);
+		temp.push_back(result);
+		double_data1.push_back(temp);
+    }
+	for (int i = 0; i<x1_4times.size(); i++)
+	{
+		std::vector<double> temp;
+		temp.push_back(x1_4times[i]);
+		double result = interpolator.interpolate(x1_4times[i]);
+		temp.push_back(result);
+		ftimes_data1.push_back(temp);
+	}
+    std::string double_data2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/data1_cubicspline_double_pointsNP.csv";
+    std::string ftimes_data2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/data1_cubicspline_4times_pointsNP.csv";
+	write_csv(double_data1_path, double_data1);
+	write_csv(ftimes_data1_path, ftimes_data1);
+
+    double_data2.clear();
+	ftimes_data2.clear();
+	Cubicspline_interpolation interpolator2;
+	interpolator2.fit(data2_x, data2_y);
+        for(int i = 0;i<x2_double.size();i++)
+    {
+        std::vector<double> temp;
+        temp.push_back(x2_double[i]);
+        double result = interpolator2.interpolate(x2_double[i]);
+        temp.push_back(result);
+        double_data2.push_back(temp);
+    }
+    for(int i = 0;i<x2_4times.size();i++)
+    {
+        std::vector<double> temp;
+        temp.push_back(x2_4times[i]);
+        double result = interpolator2.interpolate(x2_4times[i]);
+        temp.push_back(result);
+        ftimes_data2.push_back(temp);
+    }
+    std::string double_data2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/data2_cubicspline_double_pointsNP.csv";
+    std::string ftimes_data2_path = "/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/output/data2_cubicspline_4times_pointsNP.csv";
+    write_csv(double_data2_path,double_data2);
+    write_csv(ftimes_data2_path,ftimes_data2);
+    
     return 0;
 }
