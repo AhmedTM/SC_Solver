@@ -1,4 +1,3 @@
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/build/CMakeFiles/rebuild_cache.dir
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/build/CMakeFiles/edit_cache.dir
-/home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/build/CMakeFiles/interpolation.dir
 /home/ahmedtarek/Scientific_Computing/SC_Solver/Interpolation/build/CMakeFiles/Interpolation.dir

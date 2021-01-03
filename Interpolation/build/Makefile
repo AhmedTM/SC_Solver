@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named interpolation
-
-# Build rule for target.
-interpolation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 interpolation
-.PHONY : interpolation
-
-# fast build rule for target.
-interpolation/fast:
-	$(MAKE) -f CMakeFiles/interpolation.dir/build.make CMakeFiles/interpolation.dir/build
-.PHONY : interpolation/fast
-
-#=============================================================================
 # Target rules for targets named Interpolation
 
 # Build rule for target.
@@ -169,7 +156,6 @@ src/read_csv.o: src/read_csv.cpp.o
 
 # target to build an object file
 src/read_csv.cpp.o:
-	$(MAKE) -f CMakeFiles/interpolation.dir/build.make CMakeFiles/interpolation.dir/src/read_csv.cpp.o
 	$(MAKE) -f CMakeFiles/Interpolation.dir/build.make CMakeFiles/Interpolation.dir/src/read_csv.cpp.o
 .PHONY : src/read_csv.cpp.o
 
@@ -179,7 +165,6 @@ src/read_csv.i: src/read_csv.cpp.i
 
 # target to preprocess a source file
 src/read_csv.cpp.i:
-	$(MAKE) -f CMakeFiles/interpolation.dir/build.make CMakeFiles/interpolation.dir/src/read_csv.cpp.i
 	$(MAKE) -f CMakeFiles/Interpolation.dir/build.make CMakeFiles/Interpolation.dir/src/read_csv.cpp.i
 .PHONY : src/read_csv.cpp.i
 
@@ -189,7 +174,6 @@ src/read_csv.s: src/read_csv.cpp.s
 
 # target to generate assembly for a file
 src/read_csv.cpp.s:
-	$(MAKE) -f CMakeFiles/interpolation.dir/build.make CMakeFiles/interpolation.dir/src/read_csv.cpp.s
 	$(MAKE) -f CMakeFiles/Interpolation.dir/build.make CMakeFiles/Interpolation.dir/src/read_csv.cpp.s
 .PHONY : src/read_csv.cpp.s
 
@@ -201,7 +185,6 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... interpolation"
 	@echo "... Interpolation"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
