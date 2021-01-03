@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../lib/libgausselimination.a  CMakeFiles/gausselimination.dir/src/gauss_elimination.cpp.o CMakeFiles/gausselimination.dir/src/matrix.cpp.o CMakeFiles/gausselimination.dir/src/vector.cpp.o
-/usr/bin/ranlib ../lib/libgausselimination.a

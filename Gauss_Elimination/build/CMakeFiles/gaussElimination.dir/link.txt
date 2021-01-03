@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/gaussElimination.dir/src/main.cpp.o CMakeFiles/gaussElimination.dir/src/read_csv.cpp.o  -o ../bin/gaussElimination 

@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/curveFitting.dir/src/converters.cpp.o CMakeFiles/curveFitting.dir/src/linear_algerbra_ops.cpp.o CMakeFiles/curveFitting.dir/src/main.cpp.o CMakeFiles/curveFitting.dir/src/multlivariable_linear_regression.cpp.o CMakeFiles/curveFitting.dir/src/polynomial_regression.cpp.o CMakeFiles/curveFitting.dir/src/read_csv.cpp.o  -o ../bin/curveFitting 

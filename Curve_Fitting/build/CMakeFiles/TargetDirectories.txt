@@ -1,4 +1,0 @@
-/home/ahmedtarek/Scientific_Computing/SC_Solver/Curve_Fitting/build/CMakeFiles/rebuild_cache.dir
-/home/ahmedtarek/Scientific_Computing/SC_Solver/Curve_Fitting/build/CMakeFiles/edit_cache.dir
-/home/ahmedtarek/Scientific_Computing/SC_Solver/Curve_Fitting/build/CMakeFiles/curvefitting.dir
-/home/ahmedtarek/Scientific_Computing/SC_Solver/Curve_Fitting/build/CMakeFiles/curveFitting.dir
